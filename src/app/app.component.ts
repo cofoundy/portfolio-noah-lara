@@ -4,13 +4,24 @@ import { Experience } from './interfaces';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   experiences: Experience[] = [
     {
+      startYear: '2024',
+      endYear: 'present',
+      title: 'Software Engineer',
+      company: 'RAVN',
+      link: 'https://www.ravn.co/',
+      description: 'Currently working as a Software Engineer at RAVN, where I am involved in the development of a web application for the North American company Lucid. My role includes implementing new features, fixing bugs, and ensuring the application meets high standards of quality and performance.',
+      technologies: [
+      ],
+      logo: 'assets/ravn.png',
+    },
+    {
       startYear: '2022',
-      endYear: 'Present',
+      endYear: '2024',
       title: 'FullStack Developer Analyst',
       company: 'ORIGEN COWORK',
       link: 'https://www.origencorp.net/',
@@ -24,7 +35,8 @@ export class AppComponent {
         { name: 'Illustrator', icon: '' },
         { name: 'Figma', icon: '' },
         { name: 'Photoshop', icon: '' },
-      ]
+      ],
+      logo: 'assets/origen.png',
     },
     {
       startYear: '2021',
@@ -37,7 +49,8 @@ export class AppComponent {
         { name: 'Angular', icon: '' },
         { name: 'NodeJS', icon: '' },
         { name: 'PostgreSql', icon: '' },
-      ]
+      ],
+      logo: 'assets/creativa.jpg',
     },
     {
       startYear: '2019',
@@ -49,11 +62,11 @@ export class AppComponent {
       technologies: [
         { name: 'English B2-C1', icon: '' },
         { name: 'Excel', icon: '' },
-        { name: 'At&t Ecosystem', icon: '' }
-      ]
-    }
+        { name: 'At&t Ecosystem', icon: '' },
+      ],
+      logo: 'assets/att.png',
+    },
   ];
-
 
   title = 'pp';
 }

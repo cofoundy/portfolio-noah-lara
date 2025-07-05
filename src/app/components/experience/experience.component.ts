@@ -14,6 +14,7 @@ export class ExperienceComponent implements OnInit {
     @Input() description: string = '';
     @Input() link: string = '';
     @Input() technologies: Technologie[] = [];
+    @Input() logo: string = '';
 
     constructor() { }
 

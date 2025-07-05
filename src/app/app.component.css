@@ -19,8 +19,30 @@
   scroll-behavior: smooth;
   display: none;
 }
-/* LEFT CONTAINER */
-.left-container {
+
+.border-gradient-profile {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(270deg, #f5f5f5, #159957, #155799);
+  background-size: 400% 400%;
+  animation: gradientMove 7s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .profile {
@@ -48,11 +70,23 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: bold;
+  background: #159957; /* fallback */
+  background: -webkit-linear-gradient(to left, #155799, #159957);
+  background: linear-gradient(to left, #155799, #159957);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Opcional: para compatibilidad */
+  background-clip: text;
+  color: transparent;
 }
 
 .p-card-content {
   line-height: 1.5;
-  opacity: 0.7;
+}
+
+.p-card-content a img {
+  width: 15px;
 }
 
 .nav {
@@ -122,6 +156,7 @@
 
 /* RIGHT CONTAINER */
 .right-container {
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -137,6 +172,38 @@
   text-decoration: none;
 }
 
+.technologies {
+  display: flex;
+  gap: 10px;
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.technology:nth-child(2) img {
+  margin-right: 5px;
+}
+
+.technology:nth-child(3) img {
+  margin-right: 5px;
+}
+
+.technology span {
+  font-size: 10px;
+}
+
+.technologies img {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
 .social-media {
   display: flex;
   gap: 10px;
@@ -145,4 +212,29 @@
 .social-media i {
   font-size: 24px;
   cursor: pointer;
+}
+
+.company-logo {
+  width: 35px;
+  height: 50px;
+}
+
+.lucid-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.apicar-logo {
+  width: 50px;
+  height: 15px;
+}
+
+.integral-logo {
+  width: 70px;
+  height: 35px;
+}
+
+.laplacita-logo {
+  width: 75px;
+  height: 45px;
 }

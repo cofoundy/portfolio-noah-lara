@@ -8,4 +8,5 @@ export interface Experience {
     link:         string;
     description:  string;
     technologies: Technologie[];
+    logo:         string;
 }

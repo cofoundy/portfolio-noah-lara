@@ -383,16 +383,15 @@ section {
 /* Project Image */
 .project-image {
   width: 100%;
-  max-width: 150px;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
   border-radius: 0.25rem;
-  border: 2px solid rgba(226, 232, 240, 0.1);
-  transition: border-color 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .card:hover .project-image {
-  border-color: rgba(226, 232, 240, 0.3);
+  opacity: 0.9;
 }
 
 /* Footer */

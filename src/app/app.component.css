@@ -46,7 +46,7 @@
 }
 
 .profile {
-  background-image: url(../assets/1000043579.jpg);
+  background-image: url(../assets/profile-new.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,4 +237,139 @@
 .laplacita-logo {
   width: 75px;
   height: 45px;
+}
+
+/* ===== NEW STYLES: LUCID HIGHLIGHT ===== */
+
+.lucid-highlight {
+  color: #159957;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.lucid-highlight:hover {
+  color: #1db954;
+  text-decoration: underline;
+}
+
+.lucid-featured {
+  background: linear-gradient(135deg, rgba(21, 153, 87, 0.15) 0%, rgba(21, 87, 153, 0.15) 100%);
+  border: 1px solid rgba(21, 153, 87, 0.3);
+  padding: 1rem !important;
+  position: relative;
+}
+
+.featured-badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: linear-gradient(to right, #159957, #155799);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.impact-metric {
+  color: #1db954;
+  font-weight: bold;
+}
+
+.project-link {
+  color: #159957;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #1db954;
+  text-decoration: underline;
+}
+
+/* ===== CTA BUTTON ===== */
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #159957, #155799);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(21, 153, 87, 0.4);
+  color: white;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1em;
+    overflow-y: auto;
+    max-height: none;
+  }
+
+  .left-container {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  .border-gradient-profile {
+    margin: 0 auto;
+  }
+
+  .p-card-title {
+    font-size: 2rem;
+  }
+
+  .p-card-subtitle {
+    font-size: 1rem;
+  }
+
+  .technologies {
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .cta-button {
+    display: block;
+    margin: 1em auto;
+    max-width: 200px;
+  }
+
+  .section {
+    margin-top: 4em;
+  }
+
+  ::ng-deep.p-scrollpanel {
+    height: auto !important;
+  }
+
+  .right-container {
+    padding: 0 1em;
+  }
+
+  .featured-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
 }
